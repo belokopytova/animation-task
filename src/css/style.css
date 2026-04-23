@@ -1,35 +1,78 @@
-.chameleon{
-    display: inline-block;
-    color: white;
-    border: 2px solid #333;
-    border-radius: 6px;
-    font-size: xx-large;
-    cursor: pointer;
-    padding: 12px 24px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.chameleon-animation{
-    color: red;
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.chameleon-animation:hover{
-    color: blue;
+
+.widget_collapse {
+  width: 600px;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 1.5rem 1.75rem;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
-/* TODO: write your code here */
+.widget_controls {
+  margin-bottom: 0.75rem;
+}
 
+.widget_button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #0d6efd;
+  box-sizing: border-box;
+  background-color: #0d6efd;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
 
-/* Coin Sample Starter */
-.coin{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: xx-large;
-    background: seagreen;
-    color: white;
+.widget_button:hover {
+  cursor: pointer;
+  background-color: #0b5ed7;
+  border-color: #0b5ed7;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.widget_button:focus {
+  outline: none;
+}
+
+.widget_footer {
+  overflow: hidden;
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+}
+
+.widget_footer_text {
+  padding: 1.25rem 1.5rem;
+  line-height: 1.5rem;
+  color: #212529;
+  font-size: 0.9rem;
+}
+
+.widget_copy {
+  text-align: right;
+  padding-top: 10px;
+  font-size: 10px;
+  color: #ccc;
+}
+
+.show {
+  opacity: 1;
+  max-height: 500px;
+  transition: opacity 0.1s 0.1s ease-in, max-height 1s ease-in;
+}
+
+.collapse {
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 1s ease-out, opacity 0.7s 0.7s ease-out;  
 }
