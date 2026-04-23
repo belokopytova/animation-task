@@ -1,3 +1,4 @@
-// TODO: write code here
+import WidgetCollapse from "./widgetCollapse";
 
-console.log('app.js bundled');
+const widgetCollapsed = new WidgetCollapse();
+widgetCollapsed.init();
