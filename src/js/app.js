@@ -1,4 +1,4 @@
-import WidgetCollapse from "./widgetCollapse";
+import WidgetCollapse from './widgetCollapse';
 
 const widgetCollapsed = new WidgetCollapse();
 widgetCollapsed.init();
